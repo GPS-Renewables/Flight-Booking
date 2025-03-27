@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight booking details form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+ -->
+    <img class="logo" src="./gpsr-logo.png" alt="">
+
+<section class="contact-section">
+    <div class="contact-intro">
+      <h2 class="contact-title">Flight Booking Details Form</h2>
+      <p class="contact-description">
+        Fill out the form below based on your preferences.
+      </p>
+    </div>
+  
+    <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  
+      <input type="hidden" name="access_key" value="5422789d-e0db-4222-983c-639a5d68bcd1" />
+      <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+      <input type="hidden" name="from_name" value="My Website" />
+      <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+  
+      <div class="form-group-container">
+        <div class="form-group">
+          <label for="name" class="form-label">Name</label>
+          <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+        </div>
+        </div>
+      <br>
+        <div class="form-group">
+          <label for="phone" class="form-label">Phone</label>
+          <input id="phone" name="phone" class="form-input" placeholder="+91 23456 78901" type="text" />
+        </div>
+      <br>
+      <div class="form-group">
+          <label for="flyerID" class="form-label">Frequent Flyer ID(if have)</label>
+          <input id="flyerID" name="flyerID" class="form-input" placeholder="" type="text" />
+        </div>
+      <br>
+      <div class="form-group">
+          <label for="seat" class="form-label">Seat preferred</label>
+          <div class="form-group">
+            <select id="seat" name="seat" class="form-select">
+              <option value="aisle">Aisle</option>
+              <option value="window">Window</option>
+              <option value="xl">XL</option>
+            </select>
+          </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="meal" class="form-label">Meal preference</label>
+            <select id="meal" name="meal" class="form-select">
+              <option value="veg">Veg</option>
+              <option value="non-veg">Non-veg</option>
+            </select>
+          </div>
+          <br>
+      </div>
+      <button class="form-submit" type="submit">Submit</button>
+    </form>
+  
+  </section>
+</body>
+</html>
